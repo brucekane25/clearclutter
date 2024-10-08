@@ -6,6 +6,14 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+function Btn() {
+  return (
+    <div>
+      <button>Hola I am a button</button>
+    </div>
+  )
+}
+
   return (
     <>
       <div>
@@ -15,8 +23,9 @@ function App() {
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
-      </div>
+       </div>
       <h1>Vite + React</h1>
+      <Btn/>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
